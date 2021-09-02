@@ -1,0 +1,55 @@
+<meta charset = "UTF-8">
+
+<script>
+
+var fraseTitulo = "Qual a idade dos membros da minha família?";
+var anoAtual = 2021;
+var puxaIdade;
+var diferencaIdade;
+
+function mostraTitulo(titulo){
+    document.write("<h3>" + titulo +"</h3>");
+}
+
+function pulaLinha(){
+    document.write("<br> <br>");
+}
+
+function calculaIdade(anoDeNascimento){
+    puxaIdade = anoAtual - anoDeNascimento;
+}
+
+function mostraIdade(nome, idade){
+    document.write("A idade da " + nome + " é " + idade + " anos.");
+    pulaLinha();
+}
+
+function mostraDiferenca(maiorIdade, menorIdade){
+    diferencaIdade = maiorIdade - menorIdade;
+    document.write("A diferença entre as idades é de " + diferencaIdade + " anos.")
+}
+
+mostraTitulo(fraseTitulo);
+
+calculaIdade(1945);
+mostraIdade("Yara", puxaIdade);
+var idadeYara = puxaIdade;
+
+calculaIdade(1970);
+mostraIdade("Sumaia", puxaIdade);
+var idadeSumaia = puxaIdade;
+
+calculaIdade(1997);
+mostraIdade("Bruno", puxaIdade);
+var idadeBruno = puxaIdade;
+
+calculaIdade(1999);
+mostraIdade("Tita", puxaIdade);
+var idadeTita = puxaIdade;
+
+fraseTitulo = "Qual a diferença de idade entre o mais velho e o mais novo da sua família?";
+
+mostraTitulo(fraseTitulo);
+mostraDiferenca(idadeYara, idadeTita);
+
+</script>

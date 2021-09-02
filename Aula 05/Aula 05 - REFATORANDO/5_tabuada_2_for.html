@@ -1,0 +1,28 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function mostraTitulo(titulo){
+        document.write("<h4>" + titulo + "</h4>"); 
+    }
+	
+    function fazTabuada(tabuada){
+        mostraTitulo("A tabuada do " + tabuada + " é:");
+       
+        for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+            mostra(tabuada + " vezes " + multiplicador + " é " + (tabuada * multiplicador));
+        }
+    }
+
+    var perguntaNumero = fazTabuada(parseInt(prompt("Qual tabuada você quer saber?")));
+
+</script>

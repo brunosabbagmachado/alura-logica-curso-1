@@ -1,0 +1,24 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function fazConta(valor1, valor2, valor3, valor4, divisao){
+		return (valor1 + valor2 + valor3 + valor4) / divisao;
+	}
+
+	mostra("<h3>Calculando o gasto das viagens.</h3>");
+
+	var valorConta = fazConta(200,100,300,400,4)
+	mostra(valorConta);
+
+
+</script>

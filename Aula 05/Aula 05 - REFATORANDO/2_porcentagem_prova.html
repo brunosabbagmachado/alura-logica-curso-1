@@ -1,0 +1,22 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function resultadoProva(acertos, questoes){
+        return (acertos / questoes) * 100;
+    }
+
+	var minhaNota = resultadoProva(15,50)
+	mostra("Eu acertei: " + minhaNota + "%");
+	
+
+</script>

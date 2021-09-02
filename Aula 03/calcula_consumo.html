@@ -1,0 +1,25 @@
+<meta charset = "UTF-8">
+
+<h3>Álcool ou Gasolina?</h3>
+<br>
+
+<script>
+
+	var tanque = 40;
+
+	var caminhoComGasolina = 480;
+	var caminhoComAlcool = 300;
+
+	var consumoDeGasolina = caminhoComGasolina/tanque;
+	var consumoDeAlcool = caminhoComAlcool/tanque;
+
+	consumoDeGasolina =  Math.round(consumoDeGasolina);
+	consumoDeAlcool = Math.round(consumoDeAlcool);
+
+	document.write("<h4>Qual é o consumo com gasolina?</h4>");
+	document.write("O consumo com gasolina é " + consumoDeGasolina + " km/L.<br> <br> <br>");
+
+	document.write("<h4>Qual é o consumo com álcool?</h4>");
+	document.write("O consumo com álcool é " + consumoDeAlcool + " km/L.");
+
+</script>

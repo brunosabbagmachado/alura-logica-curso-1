@@ -1,0 +1,44 @@
+<meta charset = "UTF-8">
+
+<script>
+
+function mostraTitulo(titulo){
+    document.write("<h3>" + titulo +"</h3>");
+}
+
+function pulaLinha(){
+    document.write("<br> <br>");
+}
+
+function calculaIdade(anoAtual, anoDeNascimento){
+    return puxaIdade = anoAtual - anoDeNascimento;
+}
+
+function mostraNomeIdade(nome, idade){
+    document.write("A idade da " + nome + " é " + idade + " anos.");
+    pulaLinha();
+}
+
+function mostraDiferenca(maiorIdade, menorIdade){
+    var diferencaIdade = maiorIdade - menorIdade;
+    document.write("A diferença entre as idades é de " + diferencaIdade + " anos.")
+}
+
+mostraTitulo("Qual a idade dos membros da minha família?");
+
+var idadeYara = calculaIdade(2021,1945);
+mostraNomeIdade("Yara", idadeYara);
+
+var idadeSumaia = calculaIdade(2021,1970);
+mostraNomeIdade("Sumaia", idadeSumaia);
+
+var idadeBruno = calculaIdade(2021,1997);
+mostraNomeIdade("Bruno", idadeBruno);
+
+var idadeTita = calculaIdade(2021,1999);
+mostraNomeIdade("Tita", idadeTita);
+
+mostraTitulo("Qual a diferença de idade entre o mais velho e o mais novo da sua família?");
+mostraDiferenca(idadeYara, idadeTita);
+
+</script>

@@ -1,0 +1,95 @@
+<meta charset = "UTF-8">
+
+<script>
+
+	//versão 1
+	document.write("<h3> Versão 1 </h3>")
+
+	var ano = 2016;
+
+	document.write("Flávio tem " + (ano - 1977) + " anos. <br>");
+	document.write("Joaquim tem " + (ano - 1996) + " anos. <br>");
+	document.write("Barney tem " + (ano - 1976) + " anos. <br> <br>");
+
+
+	//........................................................................
+
+
+	//versão 2 - usando algumas variaveis pra limpar o código e fazer Média
+	document.write("<h3> Versão 2 </h3>")
+
+	var ano2 = 2017
+	document.write("Flávio tem " + (ano2 - 1977) + " anos. <br>");
+	document.write("Joaquim tem " + (ano2 - 1996) + " anos. <br>");
+	document.write("Barney tem " + (ano2 - 1976) + " anos. <br>");
+
+	var idadeFlavio = 40;
+	var idadeJoaquim = 21;
+	var idadeBarney = 41;
+
+	var media = (idadeFlavio + idadeJoaquim + idadeBarney) / 3;
+
+	document.write("A média das idades é " + Math.round(media) + "<br> <br>"); //Math.round(); serve para acessar a matemática e arredondar
+
+
+	//........................................................................
+
+
+	//versão 3 - usando muitas variaveis
+	document.write("<h3> Versão 3 </h3>")
+
+	var anoAtual = 2021;
+
+	var nome1 = "Bruno";
+	var nome2 = "Sumaia";
+	var nome3 = "Tita";
+	var nome4 = "Yara";
+
+	var nascimento1 = 1997;
+	var nascimento2 = 1970;
+	var nascimento3 = 1999;
+	var nascimento4 = 1945;
+
+	var idade1 = anoAtual - nascimento1;
+	var idade2 = anoAtual - nascimento2;
+	var idade3 = anoAtual - nascimento3;
+	var idade4 = anoAtual - nascimento4;
+
+	var mediaIdades = Math.round((idade1 + idade2 + idade3 + idade4) / 4);
+
+	document.write(nome1 + " tem " + idade1 + "<br>");
+	document.write(nome2 + " tem " + idade2 + "<br>");
+	document.write(nome3 + " tem " + idade3 + "<br>");
+	document.write(nome4 + " tem " + idade4 + "<br>");
+	document.write("A média arredondada das idades é " + mediaIdades + "<br> <br>");
+
+
+	//........................................................................
+
+
+	//versão 4 - usando poucas variaveis e mudando os valores delas
+	document.write("<h3> Versão 4 </h3>")
+
+	var nome = "Bruno";
+	var nascimento = 1997;
+	var esseAno = 2021;
+	var idadeAtual = esseAno - nascimento;
+	
+	document.write(nome + " tem " + idadeAtual + "<br>");
+
+	nome = "Sumaia";
+	nascimento = 1970;
+	idadeAtual = esseAno - nascimento;
+	document.write(nome + " tem " + idadeAtual + "<br>");
+
+	nome = "Tita";
+	nascimento = 1999;
+	//idadeAtual = esseAno - nascimento;
+	document.write(nome + " tem " + idadeAtual + "<br>");
+
+	nome = "Yara";
+	nascimento = 1945;
+	idadeAtual = esseAno - nascimento;
+	document.write(nome + " tem " + idadeAtual + "<br>");
+
+</script>

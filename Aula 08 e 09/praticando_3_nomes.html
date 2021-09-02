@@ -1,0 +1,47 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function mostraResultados(quantidadeResultados){
+
+        var anoAtual = parseInt(prompt("Qual o ano atual?"));
+        perguntaNomeIdade();
+
+        for( i = 0; i < quantidadeResultados; i++){
+            var mostraIdades = anoAtual - idades[i];
+            mostra((nomes[i] + " a sua idade é " + idades[i]) + ". Isso significa que você nasceu em " + mostraIdades);
+           
+        }
+    }
+
+    function perguntaNomeIdade(){
+        nomes.push(prompt("Qual o nome do usuário " + nomes[i] + "?"));
+        idades.push(prompt("Qual a sua idade?"));
+    }
+
+    var i;
+
+    var nomes = [];
+    var idades = [];
+
+    var quantasVezes = parseInt(prompt("Quantas vezes você quer tentar?"));
+    mostraResultados(quantasVezes);  
+
+    console.log(nomes,idades);
+    
+
+
+
+
+
+
+</script>

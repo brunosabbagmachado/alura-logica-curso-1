@@ -1,0 +1,56 @@
+<meta charset = "UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function perguntaNomes(){
+        nomes.push(prompt("Qual o seu nome?"));
+    }
+
+    function quantidadePerguntas(quantidade){
+        for(var contador = 1; contador <= quantidade; contador++){
+            perguntaNomes();
+        }
+    }
+
+    function perguntaIdades(quantidadeIdades){
+        for(var contador = 0; contador < quantidadeIdades; contador++){
+            idades.push(prompt(nomes[contador] + ", qual a sua idade?"));
+        }
+    }
+
+    function mostraResultados(quantidadeResultados){
+
+        var anoAtual = parseInt(prompt("Qual o ano atual?"));
+
+        for(var i = 0; i < quantidadeResultados; i++){
+            mostra((nomes[i] + " a sua idade é " + idades[i]) + ". Isso significa que você nasceu em " + mostraIdades);
+            var mostraIdades = anoAtual - parseInt(idades[i]);
+        }
+    }
+
+    var nomes = [];
+    var idades = [];
+
+    var segredos = parseInt(prompt("Quantas vezes você quer tentar?"));
+    quantidadePerguntas(segredos);
+    perguntaIdades(segredos);
+    mostraResultados(segredos);  
+
+    console.log(nomes,idades);
+    
+
+
+
+
+
+
+</script>

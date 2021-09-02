@@ -1,0 +1,73 @@
+<meta charset = "UTF-8">
+
+<h2>Consolidando o meu conhecimento até aqui</h2>
+
+Primeiro aprendi um pouco sobre HTML e algumas TAGS. <br>
+
+<br>Entre as TAGS eu vi: <br>
+-h1;<br>
+-br;<br>
+-<a href = "http://www.alura.com.br">a href;</a><br>
+
+<br><br>Agora vamos falar de JavaScript e de código:<br><br>
+
+<script>
+
+	//usando o "//"" posso escrever comentários no código que mais ninguém verá
+	
+	//Usando o  "document.write()" posso escrever no HTML através do JavaScript
+	document.write("Usando o JS, posso escrever coisas no HTML usando o alert() ou o document.write()<br>");
+
+	//posso também criar variaves e atribuir valores (numericos ou textuais) nela
+	var minhaVariavel = 20;
+
+	//posso usar um document.write() para escrever um Texto e concatenar com minha variável
+	document.write("<br>Quero concatenar um texto com a minha variavel " + minhaVariavel + "<br><br>");
+
+	//posso usar variaveis para fazer contas também e usar o document.write() para escrever isso
+	var numero1 = 50;
+	var numero2 = 2;
+
+	var somaNumeros = numero1 + numero2;
+	document.write("A soma dos números é " + somaNumeros + "<br>");
+
+	var subtraiNumeros = numero1 - numero2;
+	document.write("A subtração dos números é " + subtraiNumeros + "<br>");
+
+	var multiplicaNumeros = numero1 * numero2;
+	document.write("A multiplicação dos números é " + multiplicaNumeros + "<br>");
+
+	var divideNumeros = numero1 / numero2;
+	document.write("A divsão dos números é " + divideNumeros + "<br>");
+
+	//posso criar funcoes de acao, que permitem que eu programe um grupo de acoes que deve ser realizada
+	//e use apenas uma linha para chamar essas acoes
+
+	//exemplo 1 - pular linha
+	function pulaLinha(){
+		document.write("<br><br>");
+	}
+
+	pulaLinha();
+	document.write("Pulei linha usando a Função pulaLinha()");
+
+	//exemplo 2 - usando Funcoes para calculos
+	function calculaIdade(anoAtual, anoNascismento){
+		return anoAtual - anoNascismento;
+	}
+
+	pulaLinha();
+	document.write("A idade dele é " + calculaIdade(2021, 1997)); 
+
+
+	//posso usar o "prompt()" para fazer uma pergunta para o usuario
+	pulaLinha();
+	var nome =  prompt("Qual seu nome?");
+	document.write(nome); 
+
+
+
+
+</script>
+
+

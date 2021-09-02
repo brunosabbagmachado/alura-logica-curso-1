@@ -1,0 +1,80 @@
+<meta charset="UTF-8">
+
+<script>
+
+	//opção 0 - usar alert
+	//alert("A idade do Bruno é");
+
+	//opção 1 - escrever dois document.write com o texto quebrado
+	//document.write("A idade do Bruno é ");
+	//document.write("18");
+
+	//opção 2 - escrever apenas um document.write e quebrar o texto com a Tag <br>
+	//document.write("A idade do Bruno é <br> 18");
+
+	//opção 3 - escrever três document.write e quebrar tudo, entre texto 1, enter (<br>) e texto 2
+	//document.write("A idade do Bruno é ");
+	//document.write("<br>");
+	//document.write("18");
+
+	//opção 4 - usar string e iny
+	document.write("A idade do Bruno é "); //string
+	document.write(18 + 6); //int
+	//podemos usar +, *, - e /
+
+	document.write("<br>");
+	document.write("<br>");
+
+	//..........................................................................
+	//operações
+
+	//subtração simples
+	document.write("Bruno nasceu em: ");
+	document.write(2021-24);
+
+	document.write("<br>");
+	document.write("<br>");
+
+	//média
+	document.write("A média das idades é ");
+	document.write((20 + 10 + 30) / 3);
+
+	document.write("<br>");
+	document.write("<br>");
+
+	//.............................................................
+	//concatenação - "string" + int sempre resultará em uma "string maior"
+
+	//se feito da forma errada, eis o que vai acontecer
+	//document.write("Bruno nasceu em: " + 1990 + 7);
+	//vai sair "Bruno nasceu em 19907"
+
+	//se feito da forma correta, eis o que vai acontecer
+	document.write("A soma das idades é "+ (20+10+30));
+
+	document.write("<br>");
+	document.write("<br>");
+
+	//usando tudo junto: string, int, operação, html e concatenação
+	document.write("Bruno nasceu em " + (2021 - 24) + "<br>");
+	document.write("Sumaia nasceu em " + (2021 - 51) + "<br>");
+	document.write("Letícia nasceu em " + (2021 - 22) + "<br>");
+	document.write("Yara nasceu em " + (2021 - 76) + "<br>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> 
